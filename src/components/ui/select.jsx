@@ -4,7 +4,7 @@ const Select = () => {
 
   const [searchParams, setSearchParams] = useSearchParams();
   const sort = searchParams.get("sort");
-  const search = searchParams.get("search");
+  const search = searchParams.get("search") || "";
 
   return (
     <select

@@ -4,7 +4,7 @@ import { useSearchParams } from "react-router-dom";
 const SearchInput = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const [searchInput, setSearchInput] = useState("");
-  const sort = searchParams.get("sort");
+  const sort = searchParams.get("sort") || "";
 
   const handleSubmit = (e) => {
     e.preventDefault();
